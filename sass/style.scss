@@ -3,3 +3,14 @@ $font-text: "Caveat", cursive;
 $font-header: "PT Serif", serif;
 
 /*Global*/
+body {
+  margin: 0;
+  font-family: $font-text;
+  background: #dfe6e9;
+}
+
+/*Splash*/
+
+.splash {
+  background-image: url(https://i.postimg.cc/vBqFg30D/pexels-hu-nh-t-2313027.jpg);
+}

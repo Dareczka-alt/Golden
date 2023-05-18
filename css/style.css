@@ -1,4 +1,14 @@
 /*Variables*/
 /*Global*/
+body {
+  margin: 0;
+  font-family: "Caveat", cursive;
+  background: #dfe6e9;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBSUEsU0FBQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*Splash*/
+.splash {
+  background-image: url(https://i.postimg.cc/vBqFg30D/pexels-hu-nh-t-2313027.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */
