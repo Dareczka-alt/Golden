@@ -4,10 +4,13 @@ $font-header: "PT Serif", serif;
 $firm-name: #f9ca24;
 
 /*Global*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 body {
   font-family: $font-text;
   background: #dfe6e9;
-  margin: 0;
 }
 
 .page-subtitle {
@@ -15,6 +18,8 @@ body {
   font-family: $font-header;
   display: block;
   text-align: center;
+  padding-top: 100px;
+  margin: 0;
 }
 
 .subtitle-paragraph {
@@ -24,6 +29,7 @@ body {
   text-align: center;
 }
 
+
 /*Splash*/
 .menu {
   list-style-type: none;
@@ -31,16 +37,16 @@ body {
   position: absolute;
   top: 20px;
   right: 100px;
+  margin: 0 auto;
 
 }
 
 .menu-item {
   padding: 20px;
-  margin-right: 48px;
+  margin: 0 auto;
 }
 
 .firm-name {
-  margin-left: 100px;
   padding: 60px;
   height: 15px;
   width: 30px;
@@ -75,6 +81,8 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+  display: block;
 }
 
 .title {
@@ -83,7 +91,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  line-height: 1;
+  line-height: 1.7;
+  margin: 0 auto;
 
 }
 
@@ -91,13 +100,15 @@ body {
   font-size: 64px;
   font-family: $font-header;
   padding-top: 0;
+  margin: 0 auto;
 }
 
 .title p {
   font-size: 48px;
   display: block;
-  margin-left: 140px;
+  padding-left: 140px;
   padding-bottom:0;
+  margin: 0 auto;
 }
 
 .first-btn {
@@ -110,6 +121,7 @@ body {
   font-weight: 600;
   position: absolute;
   right: 40%;
+  margin: 0 auto;
 }
 
 /*Services*/
@@ -122,7 +134,7 @@ body {
   line-height: 60px;
   color: $firm-name;
   border-radius: 50%;
-  background: #dfe6e9; 
+  background: #fff; 
   border: 2px solid $firm-name;
   display: block;
   text-align: center;
@@ -130,19 +142,53 @@ body {
 
 }
  
-.service-row {
+.my-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
 }
 
+.services {
+  background: #fff;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .service {
   text-align: center;
   font-family: $font-header;
+  display: block;
+  margin: 0 auto;
 }
 
 .service-text {
   color: #636e72;
   text-align: center;
+  padding-bottom: 100px;
+}
+
+/*Portfolio*/
+.photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+} 
+
+.box {
+  display: block;
+  background: #fff;
+  margin: 0 auto;
+  height: 100px;
+  padding: 5px;
+}
+
+.box p {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
