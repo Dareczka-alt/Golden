@@ -1,16 +1,99 @@
 /*Variables*/
 $font-text: "Caveat", cursive;
 $font-header: "PT Serif", serif;
+$firm-name: #f9ca24;
 
 /*Global*/
 body {
-  margin: 0;
   font-family: $font-text;
   background: #dfe6e9;
+  margin: 0;
 }
 
 /*Splash*/
+.menu {
+  list-style-type: none;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+
+}
+
+.menu-item {
+  padding: 20px;
+  margin-right: 48px;
+}
+
+.firm-name {
+  margin-left: 100px;
+  padding: 60px;
+  height: 15px;
+  width: 30px;
+  line-height: 15px;
+  border-radius: 50%;
+  background: none;
+  position: relative;
+
+}
+.menu-item > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.firm-name > a {
+  text-decoration: none;
+  color: $firm-name;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+
+}
 
 .splash {
+  height: 100vh;
+  position: relative;
   background-image: url(https://i.postimg.cc/vBqFg30D/pexels-hu-nh-t-2313027.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  line-height: 1;
+
+}
+
+.title h1 {
+  font-size: 64px;
+  font-family: $font-header;
+  padding-top: 0;
+}
+
+.title p {
+  font-size: 48px;
+  display: block;
+  margin-left: 140px;
+  padding-bottom:0;
+}
+
+.first-btn {
+  background: $firm-name;
+  color:#fff;
+  height: 60px;
+  width: 180px;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
+  position: absolute;
+  right: 40%;
 }
